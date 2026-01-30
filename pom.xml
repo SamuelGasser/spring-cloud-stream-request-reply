@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.4</version>
+        <version>4.0.2</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -19,9 +19,9 @@
 
     <properties>
         <java.version>17</java.version>
-        <spring.boot.version>3.5.4</spring.boot.version>
-        <spring-cloud.version>2025.0.0</spring-cloud.version>
-        <solace.jcsmp.version>10.27.3</solace.jcsmp.version>
+        <spring.boot.version>4.0.2</spring.boot.version>
+        <spring-cloud.version>2025.1.0</spring-cloud.version>
+        <solace.jcsmp.version>10.28.1</solace.jcsmp.version>
         <commons-logging.version>1.3.5</commons-logging.version>
         <dependency-check-maven.version>12.1.3</dependency-check-maven.version>
     </properties>
@@ -146,6 +146,11 @@
                     <artifactId>spring-cloud-function-context</artifactId>
                 </exclusion>
             </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webmvc-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
